@@ -1,0 +1,82 @@
+---
+import Page from "../layouts/Page.astro";
+import Card from "../components/Card.astro";
+---
+
+<Page title="Pedro Torres-Paraizo">
+    <p class="max-w-prose mx-auto text-black leading-7">
+        I’m Pedro, a graudate of the English program at Coastal Carolina University.
+        You can find me on
+        <a
+            class="underline underline-offset-2 decoration-cyan-600 decoration-2"
+            href="https://www.linkedin.com/in/pedro-torres-paraizo-067580187/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            LinkedIn</a
+        >, and if you’d like see some of my writing, check out my works below or view my <a
+            class="underline underline-offset-2 decoration-cyan-600 decoration-2"
+            href="/resume">Resume</a
+        >. Email me @ <a
+            class="underline underline-offset-2 decoration-cyan-600 decoration-2"
+            href="mailto:pedro@torresparaizo.com">pedro@torresparaizo.com</a
+        >
+    </p>
+
+    <div class="max-w-prose mx-auto mt-8 grid gap-4">
+        <Card>
+            <span slot="header">Criticism</span>
+            <span slot="title">A "Slip" and a Pastime: James Salter Meets Freud</span>
+            <span slot="description">
+                In this paper, I showed how Yū Miri’s 2014 novel <cite>Tokyo Ueno Station</cite> emphasizes the inescapability
+                of capitalism in modern Japan using the theories of Mark Fisher and Jacques Derrida.
+            </span>
+            <a href="/works/ueno" target="_blank" rel="noopener noreferrer" slot="link">Read Online</a>
+        </Card>
+
+        <Card>
+            <span slot="header">Linguistics</span>
+            <span slot="title">Poe's "The Raven," Translated / "O Corvo" de Poe, Traduzido</span>
+            <span slot="description">
+                In class-wide research project, speakers of African American English were surveyed to find the rates of
+                progressive <em>-s</em> absence in their speech. The results were analyzed against demographic information
+                about the speakers and past research.
+            </span>
+            <a href="/works/aae" target="_blank" rel="noopener noreferrer" slot="link">Read Online</a>
+        </Card>
+
+        <Card>
+            <span slot="header">Composition</span>
+            <span slot="title">The Enduring Influence of the Beats</span>
+            <span slot="description">
+                This essay explores the politicization of language in response to Min-Zhan Lu’s essay “From Silence to
+                Words,” in which Lu reflected on her English education in 1950s China.
+            </span>
+            <a href="/works/enculturation" target="_blank" rel="noopener noreferrer" slot="link">Read Online</a>
+        </Card>
+
+        <Card>
+            <span slot="header">Composition</span>
+            <span slot="title">Playing with Death in <cite>Harold and Maude</cite></span>
+            <span slot="description">
+                In this study, I surveyed queer students and argued that pedagogies sometimes falls short in supporting
+                them in the classroom. I proposed that instructors should focus on them instead of only teaching
+                non-queer students to respect others
+            </span>
+            <a href="/works/queer-comp" target="_blank" rel="noopener noreferrer" slot="link">Read Online</a>
+        </Card>
+
+        <Card>
+            <span slot="header">Criticism</span>
+            <span slot="title">Searching for a Mainline with <cite>White Light/White Heat</cite></span>
+            <span slot="description">
+                In this essay, I analyzed the effects of modern technologies in the novel <cite>White Light/White Heat</cite> by Mohsin
+                Hamid. From mobile phones to surveillance, I argued that these technologies are used to support and oppress
+                both the characters in the novel and real-life migrants.
+            </span>
+            <a href="/pdfs/daigneault-exitwest.pdf" target="_blank" rel="noopener noreferrer" slot="link"
+                >Read PDF</a
+            >
+        </Card>
+    </div>
+</Page>

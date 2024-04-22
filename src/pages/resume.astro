@@ -1,0 +1,111 @@
+---
+import Page from "../layouts/Page.astro";
+import Card from "../components/Card.astro";
+---
+
+<Page title="Pedro -- Resume">
+    <div class="max-w-prose mx-auto">
+        <h1 class="font-bold text-2xl py-2">Resume</h1>
+        <a
+            class="underline underline-offset-2 decoration-cyan-600 decoration-2"
+            href="/pdfs/torresparaizo-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Download PDF
+        </a>
+
+        <div class="grid grid-cols-1 gap-4 mt-4">
+            <h2 class="font-bold text-xl">Education</h2>
+
+            <Card no-header>
+                <span slot="title">Bachelor of Arts in English</span>
+                <span slot="description">
+                    <em>Coastal Carolina University</em>, 2020 - 2024
+                    <ul class="list-disc list-inside">
+                        <li>Concentration in English Studies.</li>
+                        <li>Minor in Film and Production Studies.</li>
+                    </ul>
+                </span>
+            </Card>
+
+            <h2 class="font-bold text-xl">Experience</h2>
+
+            <Card no-header>
+                <span slot="title">Writing Center Tutor</span>
+                <span slot="description">
+                    <em>CCU Writing Center</em>, 2022 - 2024
+                    <ul class="list-disc list-inside">
+                        <li>Offers feedback on student writing in one-on-one sessions.</li>
+                        <li>Assists students in developing their writing process and strategies for revision.</li>
+                    </ul>
+                </span>
+            </Card>
+
+            <Card no-header>
+                <span slot="title">Eco-Rep</span>
+                <span slot="description">
+                    <em>Sustain Coastal</em>, 2021 - 2022
+                    <ul class="list-disc list-inside">
+                        <li>Tutored students in beginning and intermediate German language courses.</li>
+                        <li>Cataloged and organized over 300 books, films, and other media in the center’s library</li>
+                    </ul>
+                </span>
+            </Card>
+
+            <Card no-header>
+                <span slot="title">Resident Advisor</span>
+                <span slot="description">
+                    <em>CCU University Housing</em>, 2021 - 2022
+                    <ul class="list-disc list-inside">
+                        <li>Oversaw 40 second-year students in student dorms.</li>
+                        <li>Served as a conduit to campus resources as they adjusted to college life.</li>
+                        <li>Offered immediate support during emergencies to ensure a safe living environment.</li>
+                    </ul>
+                </span>
+            </Card>
+
+            <h2 class="font-bold text-xl">Academic Achievements</h2>
+
+            <Card no-header>
+                <span slot="title">Publication in <cite>The Rage</cite> Zine</span>
+                <span slot="description">
+                    <em>CCU Women’s and Gender Studies</em>, Fall 2023
+                    <p>
+                        An excerpt of my research on queer students’ compositions was published in the Fall 2023 issue
+                        of <cite>The Rage</cite>, a student-led magazine.
+                    </p>
+                </span>
+            </Card>
+
+            <Card no-header>
+                <span slot="title">Withrop University Interdisciplinary Conference</span>
+                <span slot="description">
+                    <em>Winthrop University</em>, February 2023
+                    <p>
+                        Presented a literary criticism paper at Winthrop University’s the third annual interdisciplinary
+                        conference.
+                    </p>
+                </span>
+            </Card>
+
+            <Card no-header>
+                <span slot="title">Undergraduate Research Competition</span>
+                <span slot="description">
+                    <em> Coastal Carolina University</em>, 2023
+                    <p>
+                        Presented <a
+            class="underline underline-offset-2 decoration-cyan-600 decoration-2"
+            href="https://digitalcommons.coastal.edu/ugrc/2023/fullconference/108/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            "Provocative, Unorthodox, and Ultimately Transgressive: How the Antinomian Spirit of the Velvet Underground’s White Light/White Heat Shaped Heavy Music,"</a>
+        based on a research paper for ENGL332.
+                    
+                    </p>
+                </span>
+            </Card>
+        </div>
+    </div>
+</Page>
